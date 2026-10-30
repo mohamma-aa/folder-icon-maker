@@ -1,0 +1,12 @@
+# Required -- upper-bounded so a future major Pillow release can never
+# silently break a build (reproducible builds); raise it deliberately.
+Pillow>=10.0,<13
+
+# ImageMagick is REQUIRED for the faithful templates (the project reproduces
+# the original ImageMagick commands). Install it so `magick`/`convert` is on
+# PATH:  https://imagemagick.org/script/download.php
+#
+# Optional (Windows, portable setup): place a static/portable `magick.exe`
+# in  rcfi_assets/resources/  -- it is kept out of git (see .gitignore),
+# picked up automatically at runtime, and bundled into the exe by
+# build.bat / build_dir.bat when present.

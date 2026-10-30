@@ -1,0 +1,14 @@
+__pycache__/
+build/
+dist/
+*.pyc
+
+# Portable ImageMagick stays out of git entirely -- not just the .exe
+# but also its DLLs and config files that ship next to it; build.bat
+# bundles the whole folder into the exe automatically if present (get
+# it from https://imagemagick.org or attach it to a GitHub Release).
+rcfi_assets/resources/
+
+# Demo dataset -- the app recreates its sample poster itself; a test
+# folder can simply be made by hand in Explorer.
+sample/
