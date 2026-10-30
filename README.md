@@ -149,8 +149,9 @@ view, so you can pick the right look before applying anything.
 - **Supported image formats**: JPG/JPEG/JPE/JFIF, PNG, BMP/DIB, GIF, WebP,
   TIFF, TGA, AVIF, HEIC/HEIF and SVG (the last three depend on the
   capabilities of the installed ImageMagick).
-- Re-iconing already-iconed folders always works: existing `desktop.ini`
-  attributes are stripped before rewriting.
+- Re-iconing already-iconed folders always works: the existing `desktop.ini`
+  is read and merged first, then swapped in atomically -- attributes are
+  only touched right before the replace and restored if anything fails.
 - Portable folder icons: `folder.ico` lives inside the folder and is
   referenced by name only.
 - Without ImageMagick the app still runs, but every template then produces
