@@ -7,7 +7,7 @@ Windows release, together with their license texts. The shared MIT text
 for items 1-2 lives in the LICENSE file.
 
 1) Folder Icon Maker — MIT License
-   Copyright (c) 2026 mohamma-aa
+   Copyright (c) 2026 Mohammad Jafari
    Full license text: see the LICENSE file.
 
 2) RightClick Folder Icon Tools (template artwork, template images and
